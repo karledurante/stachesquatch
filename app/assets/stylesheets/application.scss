@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+/* Common colors */
+$creme:       #f1e3c5;
+$orange:      #f37321;
+$red:         #ee3524;
+$brown:       #54301a;
+
+/* Rare colors */
+$blue:        #10a6df;
+$dark_red:    #aa241b;
+$half_brown:  #A09086;
+$green:       #10c793;
+$yellow:      #fdfcb2;
+
+/* Other colors */
+$light_red:   adjust-lightness($red, 20);
+$light_gray:  #aaa;
+$black:       #000;
+$white:       #fff;
+$hover_creme: adjust_color($creme, $hue: -2, $saturation: 5%, $lightness: -12%);
+
+/* Element Color Mappings */
+
+$text-color:          $brown;
+
+$link-color:          $red;
+$link-visited-color:  $dark_red;
+$link-hover-color:    $blue;
+$link-active-color:   $link-hover-color;
+
+body {
+  border: 0;
+  margin: 0;
+  padding-top: 0;
+  min-height: 100%;
+  color: $brown;
+  font-family: museo-sans,Tahoma,sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: museo-slab,Tahoma,sans-serif;
+  line-height: 24px;
+  color: $orange;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 26px;  
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.header {
+  background-color: $red;
+  color: $white;
+  height : 50px;
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+
+.logo {
+  margin: 0 25px;
+  padding: 10px;
+}
+
+.content {
+  margin-right: auto; margin-left: auto; width: 980px;
+}
+
+.left_column {
+  width: 560px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.right_column {
+  width: 300px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.reset_columns {
+  clear: both;
+  margin: 10px 0 0 0;
+  height: 10px;
+}
