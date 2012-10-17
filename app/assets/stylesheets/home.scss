@@ -53,7 +53,25 @@
   h1, h2 {
     color: $white;
   }
+
+  .cost {
+    float: left;
+    width: 85px;
+  }
+
+  .product {
+    float: left;
+  }
+
+  .reset {
+    clear: both;
+  }
+
+  .purchase {
+    text-align: center;
+  } 
 }
+
 
 .shirt_design {
   text-align: center;
