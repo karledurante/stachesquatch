@@ -1,0 +1,28 @@
+/* Common colors */
+$creme:       #f1e3c5;
+$orange:      #f37321;
+$red:         #ee3524;
+$brown:       #54301a;
+
+/* Rare colors */
+$blue:        #10a6df;
+$dark_red:    #aa241b;
+$half_brown:  #A09086;
+$green:       #10c793;
+$yellow:      #fdfcb2;
+
+/* Other colors */
+$light_red:   adjust-lightness($red, 20);
+$light_gray:  #aaa;
+$black:       #000;
+$white:       #fff;
+$hover_creme: adjust_color($creme, $hue: -2, $saturation: 5%, $lightness: -12%);
+
+/* Element Color Mappings */
+
+$text-color:          $brown;
+
+$link-color:          $red;
+$link-visited-color:  $dark_red;
+$link-hover-color:    $blue;
+$link-active-color:   $link-hover-color;

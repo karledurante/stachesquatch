@@ -1,0 +1,43 @@
+@import "colors";
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.intro_graphic {
+  margin-top: 1em;
+}
+
+.buy {
+  background-color: $red;
+  padding: 1em;
+  margin: 15px 0;
+  color: $white;
+
+  h1, h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: $white;
+  }
+  
+  h2{
+    font-size: 26px;
+  }
+}
+
+.goal {
+  background-color: $creme;
+  padding: 1em;
+  margin: 15px 0;
+  
+  h1, h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: $brown;
+  }
+  
+  h2{
+    font-size: 26px;
+  }
+}
