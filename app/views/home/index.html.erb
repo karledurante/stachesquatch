@@ -1,64 +1,28 @@
 <div class="column_span">
-  <!-- <h2>Movember</h2> -->
+  <h2>Movember</h2>
   <h1>Team Stachesquatch</h1>
 </div>
 
-<div class="left_column">
-  <div class="intro_graphic">
-    <%= image_tag "stachesquatch_2012.jpg", :width=> "620" %>
-  </div>
+<div class="design_column">
+  <%= render :partial => 'design' %>
 </div>
 
-<div class="right_column">
-  <p>It's Movember and time to make a difference.</p>
-  
-  <p>Men's health is a cause we're passionate about. Our commitment is to grow a mustache for the month of November and by changing our appearance, raise vital awareness and funds men's health, specifically prostate and testicular cancer initiatives.</p>
-
-  <p>This year we are selling a limited edition T-Shirt to raise funds. With a purchase, you are not only supporting a great cause, but you also get a really cool T-Shirt.</p>
-
-  <p>Thanks,<br/>- Team Stachesquach</p>
-</div>
-
-<div class="rest_columns">&nbsp;</div>
-
-<div class="left_column">
-  <h2>American Apparel Jersey T-Shirt</h2>
-  <div class="shirt_design">
-    <%= image_tag "shirt_design.jpg"%>
-  </div>
-
-  <span class="thumbnail"><%= image_tag "thumbnail.jpg"%></span>
-  <span class="thumbnail"><%= image_tag "thumbnail.jpg"%></span>
-  <span class="thumbnail"><%= image_tag "thumbnail.jpg"%></span>
-  <span class="thumbnail"><%= image_tag "thumbnail.jpg"%></span>
-</div>
-
-<div class="right_column">
-
+<div class="intro_column">
+  <%= render :partial => 'intro' %>
   <%= render :partial => 'goal' %>
+  <%= render :partial => 'buy_now' %>
+</div>
 
-  <div class="buy">
-    <div class="cost">
-      <h1>$20</h1>
-    </div>
-    <div class="product">
-      <h2>Unisex T-Shirt</h2>
-    </div>
-    <div class="reset"></div>
-    <div class="purchase" style="display:none">
-      <a class="wepay-widget-button wepay-green" id="wepay_widget_anchor_507f2b3fe14bb" href="https://www.wepay.com/stores/255710/item/891086">Buy Now</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 891086,widget_type: "store_item_add_to_cart",anchor_id: "wepay_widget_anchor_507f2b3fe14bb",widget_options: {store_id: 255710,show_item_price: false,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Buy Now"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
-    </div>
-  </div>
-  <div class="buy">
-    <div class="cost">
-      <h1>$20</h1>
-    </div>
-    <div class="product">
-      <h2>Ladies T-Shirt</h2>
-    </div>
-    <div class="reset"></div>
-    <div class="purchase" style="display:none">
-      <a class="wepay-widget-button wepay-green" id="wepay_widget_anchor_507f2b33d63d3" href="https://www.wepay.com/stores/255710/item/627375">Buy Now</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 627375,widget_type: "store_item_add_to_cart",anchor_id: "wepay_widget_anchor_507f2b33d63d3",widget_options: {store_id: 255710,show_item_price: false,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Buy Now"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
-    </div>
+<div class="reset_columns">&nbsp;</div>
+
+<div class="about_header">About</div>
+
+<div class="about_column">
+    <%= render :partial => 'message' %>
+</div>
+
+<div class="group_column">
+  <div class="intro_graphic">
+    <%= image_tag "stachesquatch_2012.jpg", :width=> "525" %>
   </div>
 </div>

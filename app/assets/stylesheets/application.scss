@@ -54,37 +54,32 @@ p {
 }
 
 .header {
-  background-color: $red;
-  color: $white;
-  height : 40px;
+  height : 50px;
   width: 100%;
+  border-bottom: 3px solid $orange;
   margin: 0 0 25px 0;
+
+  .inner_header {
+    padding: 10px;
+    margin-right: auto; margin-left: auto; width: 980px;
+    color: $orange;
+
+    .logo {
+      width: 100px;
+      float: left;
+    }
+
+    .share {
+      width: 300px;
+      float: right;
+      text-align: right;
+      padding-right: 60px;
+    }
+
+  }
 }
 
-.logo {
-  padding: 10px;
-  margin-right: auto; margin-left: auto; width: 980px;
-}
 
 .content {
   margin-right: auto; margin-left: auto; width: 980px;
-}
-
-.left_column {
-  width: 620px;
-  float: left;
-  margin-bottom: 20px;
-}
-
-.right_column {
-  width: 300px;
-  float: left;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.reset_columns {
-  clear: both;
-  margin: 10px 0 0 0;
-  height: 10px;
 }
