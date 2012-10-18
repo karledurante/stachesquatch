@@ -50,8 +50,18 @@
   margin: 15px 0;
   color: $white;
 
+  &:hover {
+    color: $dark_red;
+    cursor: pointer;
+  }
+
   h1, h2 {
     color: $white;
+
+    &:hover {
+      color: $dark_red;
+      cursor: pointer;
+    }
   }
 
   .cost {
