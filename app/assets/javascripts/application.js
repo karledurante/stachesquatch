@@ -17,10 +17,8 @@
 
 
 $(function(){
-
+  // sliders for purchase buttons.
   $('.buy').click(function() {
-    // $(this).find('.purchase').hide("slide", { direction: "down", mode: "hide" }, 1000);
-    // $(this).find('.purchase').hide("drop", { direction: "down", mode: "show" }, 1000);
     $(this).find('.purchase').slideToggle("slow", function(){ });
   });
 })
