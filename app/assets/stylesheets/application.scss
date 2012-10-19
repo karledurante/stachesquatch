@@ -13,6 +13,7 @@
  */
 
 @import "colors";
+$layout_size: 940px;
 
 body {
   border: 0;
@@ -72,7 +73,7 @@ p {
 
   .inner_header {
     padding: 10px;
-    margin-right: auto; margin-left: auto; width: 980px;
+    margin-right: auto; margin-left: auto; width: $layout_size;
     color: $orange;
 
     .logo {
@@ -105,8 +106,34 @@ p {
   }
 }
 
-
 .content {
-  margin-right: auto; margin-left: auto; width: 980px;
+  margin-right: auto; margin-left: auto; width: $layout_size;
   padding-left: 15px;
+}
+
+.footer {
+  width: 100%;
+  background-color: $red;
+  margin: 35px 0 4px;
+
+  color: $white;
+  font-size: 12px;
+  line-height: 16px;
+
+  .inner {
+    margin-right: auto; margin-left: auto; width: $layout_size;
+    padding: 10px 0;
+
+    a, a.first {
+      padding: 0 10px;
+      color: $white;
+      font-size: 12px;
+      text-decoration: none;
+      border-left: 1px solid $white;
+    }
+
+    a.first {
+      margin-left: 10px;
+    }
+  }
 }

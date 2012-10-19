@@ -22,7 +22,7 @@
 <div class ="body">
   <div class="header">
     <div class="inner_header">
-      <div class="logo"><%= image_tag "ci_logo_small.jpg" %></div>
+      <div class="logo"><%=link_to(image_tag("ci_logo_small.jpg"), "http://www.customink.com") %></div>
       <div class="share">
         <%= render :partial => "/home/share_buttons" %>
       </div>
@@ -33,6 +33,14 @@
     <%= yield %>
   </div>
 
+</div>
+
+<div class="footer">
+  <div class="inner">
+    CustomInk is your source for custom t-shirts. <%= link_to "Privacy Policy", "http://www.customink.com/policies/#privacy", :class => "first", :target => 'new' %> <%= link_to "User Agreement", "http://www.customink.com/policies", :target => 'new'  %>
+    <br/>
+    &copy 2012 CustomInk, LLC. All rights reserved. CustomInk is a registered trademark of CustomInk LLC. "T-shirts Unite!" and the "Inky" octopus are trademarks of CustomInk, LLC.
+  </div>
 </div>
 
 
