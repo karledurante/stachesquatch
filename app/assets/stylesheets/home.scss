@@ -19,7 +19,7 @@
 }
 
 .goal {
-  margin: 30px 0;
+  margin: 30px 0 20px 0;
   padding: 20px 0;
   border-top: solid 1px $grey;
   border-bottom: solid 1px $grey;
@@ -52,6 +52,19 @@
       border-radius: 7px 0 0 7px;
       height: 12px;
     }
+  }
+
+  .em {
+    font-size: 20px;
+  }
+
+  .shirts_sold {
+    float: left;
+    width: 250px;
+  }
+
+  .days_to_go {
+    float: left;
   }
 }
 
