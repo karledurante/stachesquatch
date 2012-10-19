@@ -1,0 +1,25 @@
+<h1>Update Stachesquatch Goals</h1>
+
+<div style="margin-top: 25px;">
+  <%= form_tag(goals_path) do %>
+
+    <%= label :shirts_sold, :shirts_sold %>
+    <%= text_field_tag :shirts_sold, @goal.shirts_sold %>
+    <br/>
+
+    <%= label :dollars_raised, :dollars_raised %>
+    <%= text_field_tag :dollars_raised, @goal.dollars_raised %>
+    <br/>
+
+    <%= label :total_shirt_goal, :total_shirt_goal %>
+    <%= text_field_tag :total_shirt_goal, @goal.total_shirt_goal %>
+    <br/>
+
+
+    <%= label :campaign_end_date, :campaign_end_date %>
+    <%= select_date @goal.campaign_end_date, :prefix => :campain_date %>
+    <br/>
+
+    <%= submit_tag "Update" %>
+  <% end %>
+</div>
