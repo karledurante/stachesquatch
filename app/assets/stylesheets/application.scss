@@ -34,13 +34,14 @@ h1, h2, h3 {
 
 h1 {
   font-weight: 300;
-  font-size: 42px;  
-  line-height: 32px;
+  font-size: 52px;  
+  line-height: 42px;
 }
 
 h2 {
   font-weight: 300;
-  font-size: 22px;
+  font-size: 26px;
+  line-height: 20px;
 }
 
 h3 {
@@ -48,9 +49,19 @@ h3 {
   font-size: 17px;
 }
 
+a {
+  color: $red;
+  &:hover {
+    color: $blue;
+  }
+  &:visited {
+    color: $red;
+  }
+}
+
 p {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 24px;
 }
 
 .header {

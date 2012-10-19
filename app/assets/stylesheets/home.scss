@@ -1,14 +1,14 @@
 @import "colors";
 
 .design_column {
-  width: 500px;
+  width: 513px;
   float: left;
   margin-bottom: 20px; 
   margin-top: 15px;
 }
 
 .intro_column {
-  width: 360px;
+  width: 380px;
   float: left;
   margin-left: 40px;
   margin-bottom: 20px;
@@ -23,7 +23,7 @@
   padding: 20px 0;
   border-top: solid 1px $grey;
   border-bottom: solid 1px $grey;
-  
+
   h1, h2 {
     color: $brown;
   }
@@ -59,7 +59,7 @@
   border-radius: 4px;
   background-color: $blue;
   padding: 25px;
-  margin: 25px;
+  margin: 10px;
   color: white;
   text-align: center;
 
@@ -70,7 +70,7 @@
 
   h1, h2 {
     color: $white;
-    font-size: 36px;
+    font-size: 38px;
     text-shadow: $grey 0.1em;
 
     &:hover {
@@ -92,11 +92,15 @@
 
 .thumbnails {
   text-align: center;
-}
 
-.thumbnail {
-  padding: 0 3px;
-  width: 110px;
+  .thumbnail {
+    padding-right: 15px;
+    width: 113px;
+  }
+
+  .last {
+    padding-right: 0px;
+  }
 }
 
 .reset_columns {
@@ -106,27 +110,24 @@
 
 .about_header {
   margin: 5px 0 0 0;
-  border-radius: 2px;
-  height: 20px;
-  width: 900px;
-  padding: 5px 15px;
-  font-size: 18px;
-  background-color: $orange;
-  color: $white;
+  border-bottom: 2px solid $orange;
+  width: 933px;
+  font-size: 26px;
+  color: $orange;
   font-weight: 300;
   font-family: museo-slab,Tahoma,sans-serif;
 }
 
 .about_column {
-  width: 360px;
+  width: 353px;
   float: left;
   margin-bottom: 20px; 
   margin-top: 15px;
 }
 
 .group_column {
-  width: 520px;
+  width: 540px;
   float: left;
-  margin-left: 40px;
+  margin-left: 47px;
   margin-bottom: 20px;
 }
