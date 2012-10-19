@@ -70,14 +70,16 @@
 
 .buy {
   border-radius: 4px;
-  background-color: $blue;
+  background-color: $button_color;
+  box-shadow: inset 0 3px 0 -1px $button_top, inset 0 -2px 0 0 $button_bottom;
   padding: 25px;
   margin: 10px;
   color: white;
   text-align: center;
 
   &:hover {
-    color: $dark_red;
+    background-color: $button_hover_color;
+    box-shadow: inset 0 3px 0 -1px $button_color, inset 0 -2px 0 0 $button_bottom;
     cursor: pointer;
   }
 
@@ -87,7 +89,6 @@
     text-shadow: $grey 0.1em;
 
     &:hover {
-      color: $grey;
       cursor: pointer;
     }
   }

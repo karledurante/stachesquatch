@@ -19,6 +19,12 @@ $black:       #000;
 $white:       #fff;
 $hover_creme: adjust_color($creme, $hue: -2, $saturation: 5%, $lightness: -12%);
 
+/* button colors */
+$button_color: $blue;
+$button_hover_color: adjust_color($button_color, $hue: -2, $saturation: 5%, $lightness: -12%);
+$button_top: #4EC5F2;
+$button_bottom: #0B7198;
+
 /* Element Color Mappings */
 
 $text-color:          $brown;
