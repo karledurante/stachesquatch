@@ -145,3 +145,30 @@
   margin-left: 47px;
   margin-bottom: 20px;
 }
+
+.about_footer {
+  clear: both;
+  height: 1px;
+  margin: 25px 0 45px 0;
+  width: 940px;
+  border-bottom: 1px solid $grey;
+}
+
+.service, .quality, .movember {
+  width: 290px;
+  float: left;
+  margin: 0px 30px 0px 0;
+
+  .banner {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    color: $brown;
+  }
+}
+
+.movember {
+  margin-right: 0;
+}
