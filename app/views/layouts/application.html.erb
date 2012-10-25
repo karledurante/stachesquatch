@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Movember - Team Stachesquatch</title>
+  <title>Movember - Team Stachequatch</title>
 
   <script type="text/javascript">
     (function() {
@@ -22,10 +22,6 @@
 <div class ="body">
   <div class="header">
     <div class="inner_header">
-
-      <% if branding_enabled? %>
-        <div class="logo"><%=link_to(image_tag("ci_logo_small.jpg"), "http://www.customink.com") %></div>
-      <% end %>
       <div class="share">
         <%= render :partial => "/home/share_buttons" %>
       </div>
@@ -39,13 +35,8 @@
 </div>
 
 <div class="footer">
-  <% if branding_enabled? %>
-    <div class="inner">
-      CustomInk is your source for custom t-shirts. <%= link_to "Privacy Policy", "http://www.customink.com/policies/#privacy", :class => "first", :target => 'new' %> <%= link_to "User Agreement", "http://www.customink.com/policies", :target => 'new'  %>
-      <br/>
-      &copy 2012 CustomInk, LLC. All rights reserved. CustomInk is a registered trademark of CustomInk LLC. "T-shirts Unite!" and the "Inky" octopus are trademarks of CustomInk, LLC.
-    </div>
-  <% end %>
+  <div class="inner">
+  </div>
 </div>
 
 

@@ -1,10 +1,10 @@
 <div class="shirt_design">
-  <%= image_tag "shirt_design.jpg", :width => 513%>
+  <%= image_tag "shirt_design_one.jpg", :width => 513, :class=>"fullsize" %>
 </div>
 
 <div class="thumbnails">
-  <span><%= image_tag "thumbnail.jpg", :class => 'thumbnail' %></span>
-  <span><%= image_tag "thumbnail.jpg", :class => 'thumbnail' %></span>
-  <span><%= image_tag "thumbnail.jpg", :class => 'thumbnail' %></span>
-  <span><%= image_tag "thumbnail.jpg", :class => 'thumbnail last' %></span>
+  <%= link_to image_tag("thumbnail.jpg", :class => 'thumbnail'), "javascript:void(0);", :data => "one" %>
+  <%= link_to image_tag("thumbnail.jpg", :class => 'thumbnail'), "javascript:void(0);", :data => "two" %>
+  <%= link_to image_tag("thumbnail.jpg", :class => 'thumbnail'), "javascript:void(0);", :data => "three" %>
+  <%= link_to image_tag("thumbnail.jpg", :class => 'thumbnail last'), "javascript:void(0);", :data => "four" %>
 </div>

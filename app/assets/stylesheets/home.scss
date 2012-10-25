@@ -10,12 +10,17 @@
 .intro_column {
   width: 380px;
   float: left;
+  margin-top: 15px;
   margin-left: 40px;
   margin-bottom: 20px;
+
+  h3 {
+    color: $brown;
+  }
 }
 
 .intro_graphic {
-  margin-top: 1em;
+  margin-top: 60px;
 }
 
 .goal {
@@ -122,14 +127,19 @@
   height: 5px;
 }
 
-.about_header {
+.about_header, .about_footer {
   margin: 5px 0 0 0;
-  border-bottom: 2px solid $orange;
+  border-bottom: 2px solid $rule;
   width: 933px;
   font-size: 26px;
-  color: $orange;
+  color: $red;
   font-weight: 300;
   font-family: museo-slab,Tahoma,sans-serif;
+}
+
+.about_footer {
+  clear: both;
+  margin-bottom: 25px;
 }
 
 .about_column {
@@ -137,6 +147,10 @@
   float: left;
   margin-bottom: 20px; 
   margin-top: 15px;
+
+  h3 {
+    color: $brown;
+  }
 }
 
 .group_column {
@@ -144,14 +158,6 @@
   float: left;
   margin-left: 47px;
   margin-bottom: 20px;
-}
-
-.about_footer {
-  clear: both;
-  height: 1px;
-  margin: 25px 0 45px 0;
-  width: 940px;
-  border-bottom: 1px solid $grey;
 }
 
 .service, .quality, .movember {

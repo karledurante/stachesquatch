@@ -21,4 +21,9 @@ $(function(){
   $('.buy').click(function() {
     $(this).find('.purchase').slideToggle("slow", function(){ });
   });
+
+  $('.thumbnails a').click(function() {
+    image_name = '/assets/shirt_design_' + $(this).attr('data') + '.jpg';
+    $('.shirt_design .fullsize').attr('src', image_name);
+  });
 })
