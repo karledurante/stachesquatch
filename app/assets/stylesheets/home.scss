@@ -120,6 +120,14 @@
   .last {
     padding-right: 0px;
   }
+
+  a {
+    text-decoration: none;
+
+    img {
+      border: 0;
+    }
+  }
 }
 
 .reset_columns {
