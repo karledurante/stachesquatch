@@ -107,6 +107,11 @@
   text-align: center;
   display: block;
   margin: 5px 0;
+  
+  .fullsize {
+    width: 513px;
+    height: 490px;
+  }
 }
 
 .thumbnails {
@@ -180,6 +185,18 @@
 
   h3 {
     color: $brown;
+  }
+}
+
+.service {
+  .banner {
+    padding-top: 35px;
+  }
+}
+
+.movember {
+  .banner {
+    padding-top: 15px;
   }
 }
 
