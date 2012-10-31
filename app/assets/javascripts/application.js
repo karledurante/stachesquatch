@@ -18,8 +18,8 @@
 
 $(function(){
   // sliders for purchase buttons.
-  $('.buy').click(function() {
-    $(this).find('.purchase').slideToggle("slow", function(){ });
+  $('.buy_now').click(function() {
+    $('.buy').find('.purchase').slideToggle("slow", function(){ });
   });
 
   $('.thumbnails a').click(function() {
