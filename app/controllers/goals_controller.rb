@@ -20,8 +20,9 @@ class GoalsController < ApplicationController
   end
 
   def sms
+
     twiml = Twilio::TwiML::Response.new do |r|
-      r.Sms "Mo Bro, you just got texted!"
+      r.Sms "params: #{params.to_s}"
     end
     render :xml => twiml.text
   end
