@@ -19,7 +19,7 @@ class GoalsController < ApplicationController
 
   def sms
 
-    shirts_sold = params[:body].to_i
+    shirts_sold = params[:Body].to_i
     dollars_raised = shirts_sold * 25
 
     @goal.shirts_sold = shirts_sold
