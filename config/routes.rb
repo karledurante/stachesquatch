@@ -3,6 +3,7 @@ Stachesquatch::Application.routes.draw do
     collection do
       get :edit
       post :update
+      get :sms
     end
 
   end

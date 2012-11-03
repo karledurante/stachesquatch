@@ -1,3 +1,5 @@
+require 'twilio-ruby'
+
 class GoalsController < ApplicationController
   def edit
     @goal = Goal.first || Goal.new
@@ -5,6 +7,7 @@ class GoalsController < ApplicationController
 
   def update
     goal = Goal.first || Goal.new
+
     goal.shirts_sold = params[:shirts_sold]
     goal.dollars_raised = params[:dollars_raised]
     goal.total_shirt_goal = params[:total_shirt_goal]
@@ -13,6 +16,14 @@ class GoalsController < ApplicationController
 
     goal.save
 
-    render :text => "MoBRO!  You did it, you're changing the face of men's health."
+    render 'goals/save'
   end
+
+  def sms
+    twiml = Twilio::TwiML::Response.new do |r|
+      r.Sms "Mo Bro, you just got texted!"
+    end
+    render :xml => twiml.text
+  end
+
 end

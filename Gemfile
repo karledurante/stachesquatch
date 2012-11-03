@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.7'
 gem 'json'
 gem 'pg'
-
+gem 'twilio-ruby'
 
 group :development do
   gem "mysql", "2.8.1"
