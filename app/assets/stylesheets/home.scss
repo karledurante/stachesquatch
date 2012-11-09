@@ -51,7 +51,8 @@
     border-radius: 7px; 
     background-color: $grey;
     height: 12px;
-
+    overflow: hidden;
+    
     .fill {
       background-color: $red;
       border-radius: 7px 0 0 7px;
