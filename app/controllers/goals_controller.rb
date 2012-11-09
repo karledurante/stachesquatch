@@ -33,6 +33,11 @@ class GoalsController < ApplicationController
     render :xml => twiml.text
   end
 
+  def approved
+
+    pgc = PaymentGatewayCallback.create({:callback_type => 'preapprove', :query_params => params.to_s })
+    render :text => pgc.to_s
+  end
 
   private
   def find_goal

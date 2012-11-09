@@ -4,6 +4,8 @@ Stachesquatch::Application.routes.draw do
       get :edit
       post :update
       get :sms
+      get :approved
+      post :approved
     end
 
   end
