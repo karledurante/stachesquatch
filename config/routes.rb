@@ -10,6 +10,7 @@ Stachesquatch::Application.routes.draw do
 
   end
 
-  match '/special/guct' => 'home#guct'
+  match '/goal' => 'goals#show'
+
   root :to => 'home#index'
 end

@@ -6,6 +6,10 @@ class GoalsController < ApplicationController
   def edit
   end
 
+  def show
+    render :layout => 'mini_goal'
+  end
+
   def update
     @goal.shirts_sold = params[:shirts_sold]
     @goal.dollars_raised = params[:dollars_raised]
@@ -20,7 +24,7 @@ class GoalsController < ApplicationController
   def sms
 
     shirts_sold = params[:Body].to_i
-    dollars_raised = shirts_sold * 25
+    dollars_raised = shirts_sold * 10
 
     @goal.shirts_sold = shirts_sold
     @goal.dollars_raised = dollars_raised
